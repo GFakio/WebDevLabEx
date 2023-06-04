@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Scrollable Dropdown Menus</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg?w=2000');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100% - 300px); /* Adjust the height as needed to leave space for the menus */
+      width: 80%; /* Adjust the width as needed */
+      margin: 0 auto; /* Center the container horizontally */
+    }
+
+    .dropdown-menu {
+      text-align: center;
+      margin-right: 5%; /* Adjust the margin-right as needed to control the spacing between the menus */
+      width: 25%; /* Adjust the width of each menu as needed */
+    }
+
+    .dropdown-menu select {
+      font-size: 16px; /* Adjust the font size as needed */
+      padding: 10px; /* Adjust the padding as needed */
+      width: 100%; /* Use relative unit to adapt to the width of the parent container */
+      max-height: 200px; /* Set the maximum height of the menu */
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    .dropdown-menu option {
+      font-size: 16px; /* Adjust the font size as needed */
+      height: 40px; /* Adjust the height as needed */
+    }
+
+    .center-image {
+      text-align: center;
+    }
+
+    .center-image img {
+      margin-top: 50px; /* Adjust the margin as needed */
+    }
+  </style>
+</head>
+<body>
+<div class="center-image">
+    <img src="https://www.icsd.aegean.gr/pps-landing/assets/images/aegean-icsd-logo--opt.png" alt="Centered Image">
+  </div>
+  <div class="container">
+    <div class="dropdown-menu">
+      <label for="academic-menu">Ακαδημαϊκό</label>
+      <select id="academic-menu" size="5">
+        <option value="1">Βλάχου Ακριβή</option>
+        <option value="2">Βουγιούκας Δημοσθένης</option>
+        <option value="3">Γκουμόπουλος Χρήστος</option>
+        <option value="4">Διαμαντοπούλου Βασιλική</option>
+        <option value="5">Καβαλλιεράτου Εργίνα</option>
+        <option value="6">Καλλίγερος Εμμανουήλ</option>
+        <option value="7">Καμπουράκης Γεώργιος</option>
+        <option value="8">Καπόρης Αλέξης</option>
+        <option value="9">Καρύδα Μαρία</option>
+        <option value="10">Κοκολάκης Σπύρος</option>
+        <option value="11">Κορμέντζας Γεώργιος</option>
+        <option value="12">Κοφινάς Γεώργιος</option>
+        <option value="13">Κρητικός Κυριάκος</option>
+        <option value="14">Κωνσταντίνου Ελισάβετ</option>
+        <option value="15">Κωστούλας Θεόδωρος</option>
+        <option value="16">Λερός Ασημάκης</option>
+        <option value="17">Λουκής Ευριπίδης</option>
+        <option value="18">Μήτρου Λίλιαν</option>
+        <option value="19">Μαλιάτσος Κωνσταντίνος</option>
+        <option value="20">Μεσαριτάκης Χάρης</option>
+        <option value="21">Σκιάνης Χαράλαμπος</option>
+        <option value="22">Σκούτας Δημήτριος</option>
+        <option value="23">Σταματάτος Ευστάθιος</option>
+        <option value="24">Στεργιόπουλος Γεώργιος</option>
+        <option value="25">Συμεωνίδης Παναγιώτης</option>
+      </select>
+    </div>
+
+    <div class="dropdown-menu">
+      <label for="instructors-menu">Λοιποί Διδάσκοντες</label>
+      <select id="instructors-menu" size="5">
+        <option value="instructor1">Αλεξόπουλος Χαράλαμπος</option>
+        <option value="instructor2">Καπελάκου Γαλάτεια</option>
+        <option value="instructor3">Μακρής Πρόδρομος</option>
+        <option value="instructor4">Νικολαΐδης Βίκτωρ</option>
+      </select>
+    </div>
+
+    <div class="dropdown-menu">
+      <label for="lab-menu">Εργαστηριακό</label>
+      <select id="lab-menu" size="5">
+        <option value="lab1">Δούμα Αναστασία</option>
+        <option value="lab2">Θεοχαροπούλου Χριστίνα</option>
+		<option value="lab3">Καρύμπαλη Ειρήνη</option>
+		<option value="lab4">Λάνδρου Ευτυχία</option>
+		<option value="lab5">Χρυσολωράς Γιώργος</option>
+      </select>
+    </div>
+
+    <div class="dropdown-menu">
+      <label for="research-menu">Ερευνητικό</label>
+      <select id="research-menu" size="5">
+        <option value="research1">Αγγελής Νικόλαος</option>
+        <option value="research2">Αδάμος Κωνσταντίνος</option>
+        <option value="research3">Αλεξίου Νικόλαος</option>
+        <option value="research4">Αποστόλου Νικόλαος</option>
+        <option value="research5">Βασιλείου Μάριος</option>
+        <option value="research6">Βολακάκη Μαρία - Γαρυφαλλιώ</option>
+        <option value="research7">Βόρρας Απόστολος</option>
+        <option value="research8">Γαβριηλίδου Όλγα</option>
+        <option value="research9">Γιαννόπουλος Ιορδάνης</option>
+        <option value="research10">Δαβαλάς Αθανάσιος</option>
+        <option value="research11">Δανούσης Μιχαήλ</option>
+        <option value="research12">Δερμάνης Δημήτρης</option>
+        <option value="research13">Δούμα Αναστασία</option>
+        <option value="research14">Θεοχαροπούλου Χριστίνα</option>
+        <option value="research15">Καρύμπαλη Ειρήνη</option>
+        <option value="research16">Λάνδρου Ευτυχία</option>
+        <option value="research17">Χρυσολωράς Γιώργος</option>
+      </select>
+    </div>
+  </div>
+</body>
+</html>
